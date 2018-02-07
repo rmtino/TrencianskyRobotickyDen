@@ -7,8 +7,8 @@
 #define SPEEDB 11
 
 //define sensor pins
-int sensorPins[5] = {2, 4, 5, 6, 7};
-int sensorData[5];
+int sensorPins[4] = {A3, A2, 5, 6};
+int sensorData[4];
 
 //define base speed for motors
 int baseSpeed = 220;

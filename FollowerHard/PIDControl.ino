@@ -24,7 +24,10 @@ void PIDMotorControl() {
     straight();
   }
   else if (error > 0) {
-    
+    turnRight();
+  }
+  else if (error < 0) {
+    turnLeft();
   }
 }
 

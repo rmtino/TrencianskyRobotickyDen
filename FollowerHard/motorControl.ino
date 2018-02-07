@@ -16,10 +16,10 @@ void straight() {
   digitalWrite(IN4, LOW);
 }
 
-void turnRight(int speed) {
-  //set the speed of motors to parameter speed
-  analogWrite(SPEEDA, speed);
-  analogWrite(SPEEDB, speed);
+void turnRight() {
+//  //set the speed of motors to parameter speed
+//  analogWrite(SPEEDA, speed);
+//  analogWrite(SPEEDB, speed);
   
   //set direction - turn right
   digitalWrite(IN1, HIGH);
@@ -28,9 +28,9 @@ void turnRight(int speed) {
   digitalWrite(IN4, HIGH);
 }
 
-void turnLeft(int speed) {
-  analogWrite(SPEEDA, speed);
-  analogWrite(SPEEDB, speed);
+void turnLeft() {
+//  analogWrite(SPEEDA, speed);
+//  analogWrite(SPEEDB, speed);
   
   //set direction - turn left
   digitalWrite(IN1, LOW);

@@ -1,6 +1,6 @@
 /*
  * This is PID line follower project for robotical competition Trenciansky Roboticky Den
- * category is follower hard
+ * category is follower hard & follower easy
  * creator: MartinLinux
  * this code is open-source: you can download, use and modify it:)
  */
@@ -8,7 +8,7 @@
 #include "define.h"
 
 void setup() {
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 4; i++) {
     pinMode(sensorPins[i], INPUT);
   }
   pinMode(IN1, OUTPUT);
@@ -21,5 +21,5 @@ void setup() {
 
 void loop() {
   readSensors();
-  
+  PIDMotorControl();
 }
